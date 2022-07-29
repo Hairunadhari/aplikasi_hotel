@@ -1,0 +1,28 @@
+.nav-item{
+    margin-left: 970px;
+}
+
+.namahotel{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 20px 0px 0px 70px;
+}
+.gambar img{
+    height: 400px;
+    width: 100%;
+    padding-top: 0px;
+}
+.about-us h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 40;
+}
+.about-us p{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
