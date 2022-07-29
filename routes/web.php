@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,8 +18,16 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('auth.login');
 });
+Route::get('/', function () {
+    return view('auth.login');
+});
 
 Auth::routes();
 
+
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// ROUTE ADMIN
+Route::get('/tampilan.admin', function () {
+    return view('admin.tampilan');
+});
