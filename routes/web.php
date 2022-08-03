@@ -19,6 +19,12 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () { 
     return view('auth.login'); 
 }); 
+Route::get('/kamar', function () { 
+    return view('kamar'); 
+});
+Route::get('/fasilitas', function () { 
+    return view('fasilitas'); 
+});
  
 Auth::routes(); 
  
