@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\KamarController;
+use App\Http\Controllers\FasilitasUmumController;
+use App\Http\Controllers\FasilitasKamarController;
 
 
 /*
@@ -18,16 +21,19 @@ use App\Http\Controllers\HomeController;
 Route::get('/', function () {
     return view('auth.login');
 });
-Route::get('/', function () {
-    return view('auth.login');
+Route::get('/home', function () {
+    return view('home');
 });
 
 Auth::routes();
 
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+
 
 // ROUTE ADMIN
-Route::get('/tampilan.admin', function () {
-    return view('admin.tampilan');
+Route::get('/dashboard', function () {
+    return view('admin.dashboard');
 });
+Route::get('/kamar', [KamarController::class, 'index'])->name('kamar');
+Route::get('/fasilitaskamar', [FasilitasKamarController::class, 'index'])->name('fasilitaskamar');
+Route::get('/fasilitasumum', [FasilitasUmumController::class, 'index'])->name('fasilitasumum');
