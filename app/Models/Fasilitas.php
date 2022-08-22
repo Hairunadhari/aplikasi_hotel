@@ -4,17 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Sarana;
 
-class Kamar extends Model
+class Fasilitas extends Model
 {
-    use HasFactory;
+    protected $table = 'fasilitas';
     protected $fillable = [
-        'tipe',
-        'harga',
-        'jumlah',
+        'nama_fasilitas',
+        'keterangan',
+        'image',
+        'kamar_id',
     ];
-
-    
-
 }
