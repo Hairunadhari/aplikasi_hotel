@@ -1,0 +1,48 @@
+.nav-item{
+    margin-left: 970px;
+}
+
+.namahotel{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding: 20px 0px 0px 70px;
+}
+.tipekamar .gambar{
+    background-color: aquamarine;
+    height: 300px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.tipekamar{
+    margin-top: 20px;
+}
+.tipekamar .superior h2{
+    margin-left: 75px;
+    margin-top: 20px;
+}
+.tipekamar .superior p{
+    margin-top: 25px;
+    margin-left: 75px;
+    font-size: small;
+}
+.tipekamar .gambar2{
+    background-color: aqua;
+    width: 1200px;
+    height: 300px;
+    margin: auto;
+    margin-top: 30px;
+}
+.tipekamar .deluxe h2{
+    margin-top: 20px;
+    margin-left: 75px;
+}
+.tipekamar .deluxe p{
+    margin-top: 25px;
+    margin-left: 75px;
+    font-size: small;
+}
+.pesan{
+    margin: auto;
+}
